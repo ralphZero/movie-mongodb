@@ -1,11 +1,9 @@
 // import mongo library
-const { uri } = require('./dbsecrets');
+const { uri } = require('./dbsecrets'); // secret
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // connect to Mongo using a URL Connection Sring
-// const uri = 'mongodb+srv://ralph:YthhmOjUwIlP3m6J@cluster1.2j1qhpk.mongodb.net/?retryWrites=true&w=majority';
-
 const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
